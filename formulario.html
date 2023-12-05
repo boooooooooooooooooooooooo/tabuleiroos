@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
+<head> 
+	<link href="css/fmlr.css" rel="stylesheet"/>
+<!--<link href="css/estilo.css" rel="stylesheet" />-->
+   <meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">	
+    <title>Login-Os melhores jogos de tabuleiros</title>
+</head>
+<body id="b">
+<div class="ml-auto mr-auto col-md-3 col-lg-3">
+	<header>
+	<p>
+	<button type="button" class="btn btn-outline-info"><a href="index.html">Voltar</a></button> para a página principal
+	</p>
+	</header>
+<main>
+<fieldset id="f">
+	<div class="col-md-12 col-10">
+<form action="/login.php method="post">
+<p>
+ <label for="nome"> Nome de usuário </label>
+ <input type="text" class="form-control mb-2" name="nome" id="name" placeholder="Nome" required pattern="[aA-zZ\s]+$">
+</p>
+</div>
+<div class="col-md-12 col-10">
+<p>
+ <label for="idade"> Idade </label>
+ <input type="number" class="form-control mb-2" name="idade" id="idade" placeholder="Idade" required pattern="[0-9]+$">
+ </p>
+ </div>
+ <div class="col-md-12 col-10">
+ <p>
+ <label for="email"> Seu E-mail </label>
+ <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Seu e-mail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+ </p>
+ </div>
+ <div class="col-md-12 col-10">
+ <p>
+ <label for="senha"> Senha </label>
+ <input type="pasworrd" class="form-control" aria-describedby="passwordHelpInline" placeholder="Senha" name="senha" id="senha" required>
+</p>
+ <small id="passwordHelpInline" class="text-muted">
+      Deve ter entre 8 e 20 caracteres.
+ </small>
+</div>
+<div class="col-md-12 col-10">
+
+<p> 
+ <label for="senha"> Confirme sua senha </label>
+ <input type="pasworrd" class="form-control" aria-describedby="passwordHelpInline" placeholder="Confirmar senha" name="senha" id="senha" required>
+</p>
+</div>
+<div class="form-check">
+<p>
+ <input id="notificações" name="notificações" type="checkbox" class="form-check-input" value="sim">
+ <label for="notificações">Desejo receber notificações</label>	
+</p>
+</div>
+<button type="submit" class="btn btn-primary col-md-6 col-5">Enviar</button>
+</div>
+
+</fieldset>
+</form>
+</main>
+</body>
+</html>
